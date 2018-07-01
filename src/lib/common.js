@@ -18,7 +18,7 @@ export default {
     checkLoginFromServerSync: function () {
         let result = false;
         $.ajax({
-            url: api.get('login.islogin'),
+            url: api.get('loginmgr.islogin'),
             type: 'POST',
             dataType: 'json',
             async: false,
