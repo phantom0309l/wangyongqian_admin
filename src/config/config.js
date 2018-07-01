@@ -1,4 +1,4 @@
-let host = '//admin.chenshuxiu.top';
+let host = '//admin.chenshuxiu.top/api';
 let dev = '?display=json';
 let domain = 'chenshuxiu.top';
 
