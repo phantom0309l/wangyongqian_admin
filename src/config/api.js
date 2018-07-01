@@ -10,7 +10,7 @@ let urls = {
     },
     'ordermgr': {
         'list': '/ordermgr/list',
-        'one': '/ordermgr/one',
+        'modify': '/ordermgr/modify',
         'modifypost': '/ordermgr/modifypost',
         'addpost': '/ordermgr/addpost',
         'auditpost': '/ordermgr/auditpost',

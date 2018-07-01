@@ -84,11 +84,11 @@ export default [
                 name: 'order-list',
                 component: resolve => require(['../pages/order/List.vue'], resolve)
             },
-            // {
-            //     path: ':orderid/modify',
-            //     name: 'order-modify',
-            //     component: resolve => require(['../pages/order/Modify.vue'], resolve)
-            // },
+            {
+                path: ':orderid/modify',
+                name: 'order-modify',
+                component: resolve => require(['../pages/order/Modify.vue'], resolve)
+            },
         ]
     },
     {

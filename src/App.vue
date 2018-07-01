@@ -11,7 +11,7 @@
                         <a class="navbar-brand">管理后台</a>
                     </el-col>
                     <el-col :span="6" :offset="12" class="text-right">
-                        {{getName()}}&nbsp;&nbsp;&nbsp;&nbsp;<el-button type="text" @click="logout">退出登录</el-button>
+                        {{getName()}}&nbsp;&nbsp;&nbsp;&nbsp;<el-button type="text" @click="logout" class="fc-text_white">退出登录</el-button>
                     </el-col>
                 </el-row>
 
