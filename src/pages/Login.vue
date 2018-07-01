@@ -80,6 +80,7 @@
 
                     if (response.errno === '0') {
                         localStorage.setItem('_islogin_', '1');
+                        localStorage.setItem('_name_', response.data.name);
 
                         self.$message.success({
                             message: '登录成功',

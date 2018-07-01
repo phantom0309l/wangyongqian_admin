@@ -122,9 +122,8 @@
             },
         },
         methods: {
-
             getName: function () {
-                return '呵呵呵呵'
+                return localStorage.getItem('_name_') || '用户';
             },
             handleOpen(key, keyPath) {
                 console.log(key, keyPath);
