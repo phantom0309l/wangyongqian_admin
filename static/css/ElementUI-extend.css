@@ -1,0 +1,43 @@
+.el-container {
+    height: 100%;
+}
+
+.el-header {
+    background-color: #fff;
+}
+
+.el-menu-vertical:not(.el-menu--collapse) {
+    width: 200px;
+    height: 100%;
+}
+
+.el-date-editor .el-range-separator {
+    display: inline-block;
+    height: 100%;
+    padding: 0 5px;
+    margin: 0;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    width: 6%;
+    color: #303133;
+}
+
+.operationcategory-list .el-tag {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.button-new-tag {
+    margin-right: 10px;
+    height: 32px;
+    line-height: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.input-new-tag {
+    width: 125px;
+    margin-left: 10px;
+    vertical-align: bottom;
+}
