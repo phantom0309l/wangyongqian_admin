@@ -46,10 +46,10 @@
                     type="index"
                     width="50">
             </el-table-column>
-            <el-table-column
-                    prop="disease_name"
-                    label="疾病">
-            </el-table-column>
+            <!--<el-table-column-->
+                    <!--prop="disease_name"-->
+                    <!--label="疾病">-->
+            <!--</el-table-column>-->
             <el-table-column
                     prop="thedate"
                     label="出诊日期">
@@ -58,14 +58,14 @@
                     prop="dow_str"
                     label="星期">
             </el-table-column>
-            <el-table-column
-                    prop="daypart_str"
-                    label="时刻">
-            </el-table-column>
-            <el-table-column
-                    prop="tkttype_str"
-                    label="类型">
-            </el-table-column>
+            <!--<el-table-column-->
+                    <!--prop="daypart_str"-->
+                    <!--label="时刻">-->
+            <!--</el-table-column>-->
+            <!--<el-table-column-->
+                    <!--prop="tkttype_str"-->
+                    <!--label="类型">-->
+            <!--</el-table-column>-->
             <el-table-column
                     prop="maxcnt"
                     label="可约数量">
@@ -77,6 +77,10 @@
             <el-table-column
                     prop="total_cnt"
                     label="已约数量">
+            </el-table-column>
+            <el-table-column
+                    prop="address"
+                    label="地址">
             </el-table-column>
             <el-table-column
                     label="状态"

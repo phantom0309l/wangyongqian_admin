@@ -10,9 +10,6 @@
                     <el-option label="审核通过下线" value="4"></el-option>
                 </el-select>
             </el-form-item>
-            <el-form-item label="患者姓名">
-                <el-input v-model="filter_form.name" placeholder="患者姓名"></el-input>
-            </el-form-item>
             <el-form-item label="预约日期">
                 <el-date-picker
                         v-model="filter_form.dates"
@@ -25,6 +22,9 @@
                         end-placeholder="结束日期"
                         :picker-options="pickerOptions">
                 </el-date-picker>
+            </el-form-item>
+            <el-form-item label="患者姓名">
+                <el-input v-model="filter_form.name" placeholder="患者姓名"></el-input>
             </el-form-item>
             <el-form-item label="出生日期">
                 <el-date-picker type="date"

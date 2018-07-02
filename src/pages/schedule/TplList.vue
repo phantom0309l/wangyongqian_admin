@@ -26,10 +26,10 @@
                     type="index"
                     width="50">
             </el-table-column>
-            <el-table-column
-                    prop="disease_name"
-                    label="疾病">
-            </el-table-column>
+            <!--<el-table-column-->
+                    <!--prop="disease_name"-->
+                    <!--label="疾病">-->
+            <!--</el-table-column>-->
             <el-table-column
                     prop="op_hz_str"
                     label="周期">
@@ -42,14 +42,14 @@
                     prop="wday_str"
                     label="星期">
             </el-table-column>
-            <el-table-column
-                    prop="day_part_str"
-                    label="时刻">
-            </el-table-column>
-            <el-table-column
-                    prop="op_type_str"
-                    label="类型">
-            </el-table-column>
+            <!--<el-table-column-->
+                    <!--prop="day_part_str"-->
+                    <!--label="时刻">-->
+            <!--</el-table-column>-->
+            <!--<el-table-column-->
+                    <!--prop="op_type_str"-->
+                    <!--label="类型">-->
+            <!--</el-table-column>-->
             <el-table-column
                     prop="maxcnt"
                     label="最大预约数量">
@@ -58,7 +58,7 @@
                     label="实例">
                 <template slot-scope="scope">
                     <el-button
-                            @click="goScheduleList(scope.row.scheduletplid)"
+                            @click="goScheduleList(scope.row.id)"
                             type="text"
                             size="small">
                         {{scope.row.schedule_cnt}}
@@ -67,7 +67,7 @@
             </el-table-column>
             <el-table-column
                     prop="revisitrecord_cnt"
-                    label="预约">
+                    label="已预约">
             </el-table-column>
             <el-table-column
                     prop="address"

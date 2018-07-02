@@ -1,13 +1,13 @@
 <template>
     <div class="schedule-addtpl">
         <el-form :model="scheduletpl" :rules="rules" ref="scheduletpl" label-width="100px" class="form-scheduletpl">
-            <el-form-item label="疾病类型" prop="diseaseid" required>
-                <el-select v-model="scheduletpl.diseaseid" placeholder="请选择疾病类型">
-                    <el-option label="全部疾病" value="0"></el-option>
-                    <el-option :label="doctordiseaseref.disease_name" :value="doctordiseaseref.diseaseid"
-                               v-for="doctordiseaseref in doctordiseaserefs" :key="doctordiseaseref.id"></el-option>
-                </el-select>
-            </el-form-item>
+            <!--<el-form-item label="疾病类型" prop="diseaseid" required>-->
+                <!--<el-select v-model="scheduletpl.diseaseid" placeholder="请选择疾病类型">-->
+                    <!--<el-option label="全部疾病" value="0"></el-option>-->
+                    <!--<el-option :label="doctordiseaseref.disease_name" :value="doctordiseaseref.diseaseid"-->
+                               <!--v-for="doctordiseaseref in doctordiseaserefs" :key="doctordiseaseref.id"></el-option>-->
+                <!--</el-select>-->
+            <!--</el-form-item>-->
 
             <el-form-item label="门诊周期" prop="op_hz" required>
                 <el-select v-model="scheduletpl.op_hz" placeholder="请选择门诊周期">
@@ -15,41 +15,41 @@
                 </el-select>
             </el-form-item>
 
-            <el-form-item label="门诊时刻" prop="day_part" required>
-                <el-select v-model="scheduletpl.day_part" placeholder="请选择门诊时段">
-                    <el-option :label="label" :value="value" v-for="(label, value) in day_parts" :key="value"></el-option>
-                </el-select>
-            </el-form-item>
+            <!--<el-form-item label="门诊时刻" prop="day_part" required>-->
+                <!--<el-select v-model="scheduletpl.day_part" placeholder="请选择门诊时段">-->
+                    <!--<el-option :label="label" :value="value" v-for="(label, value) in day_parts" :key="value"></el-option>-->
+                <!--</el-select>-->
+            <!--</el-form-item>-->
 
-            <el-form-item label="门诊时段">
-                <el-time-picker
-                        is-range
-                        :editable="false"
-                        v-model="scheduletpl.hour_str"
-                        range-separator="至"
-                        start-placeholder="开始时间"
-                        end-placeholder="结束时间"
-                        placeholder="请选择门诊时段"
-                        arrow-control
-                        value-format="HH:mm:ss">
-                </el-time-picker>
-            </el-form-item>
+            <!--<el-form-item label="门诊时段">-->
+                <!--<el-time-picker-->
+                        <!--is-range-->
+                        <!--:editable="false"-->
+                        <!--v-model="scheduletpl.hour_str"-->
+                        <!--range-separator="至"-->
+                        <!--start-placeholder="开始时间"-->
+                        <!--end-placeholder="结束时间"-->
+                        <!--placeholder="请选择门诊时段"-->
+                        <!--arrow-control-->
+                        <!--value-format="HH:mm:ss">-->
+                <!--</el-time-picker>-->
+            <!--</el-form-item>-->
 
-            <el-form-item label="门诊类型" prop="op_type" required>
-                <el-select v-model="scheduletpl.op_type" placeholder="请选择门诊类型">
-                    <el-option :label="label" :value="value" v-for="(label, value) in op_types" :key="value"></el-option>
-                </el-select>
-            </el-form-item>
+            <!--<el-form-item label="门诊类型" prop="op_type" required>-->
+                <!--<el-select v-model="scheduletpl.op_type" placeholder="请选择门诊类型">-->
+                    <!--<el-option :label="label" :value="value" v-for="(label, value) in op_types" :key="value"></el-option>-->
+                <!--</el-select>-->
+            <!--</el-form-item>-->
 
             <el-form-item label="门诊电话" prop="scheduletpl_mobile">
                 <el-input v-model="scheduletpl.scheduletpl_mobile" placeholder="请输入门诊电话"></el-input>
             </el-form-item>
 
-            <el-form-item label="门诊费用" prop="scheduletpl_cost">
-                <el-input type="number" placeholder="请输入门诊费用" v-model="scheduletpl.scheduletpl_cost">
-                    <template slot="append">元 / 人</template>
-                </el-input>
-            </el-form-item>
+            <!--<el-form-item label="门诊费用" prop="scheduletpl_cost">-->
+                <!--<el-input type="number" placeholder="请输入门诊费用" v-model="scheduletpl.scheduletpl_cost">-->
+                    <!--<template slot="append">元 / 人</template>-->
+                <!--</el-input>-->
+            <!--</el-form-item>-->
 
             <el-form-item label="最近门诊日期">
                 <el-date-picker
