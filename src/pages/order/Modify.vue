@@ -40,7 +40,7 @@
 
             <el-form-item label="面诊凭证">
                 <!--<el-input v-model="order." readonly></el-input>-->
-                <img :src="order.voucher_picture_src" width="500px">
+                <img :src="order.voucher_picture_src" height="300px">
             </el-form-item>
 
             <el-form-item label="患者备注" prop="remark">
