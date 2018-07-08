@@ -53,13 +53,17 @@
                     width="50">
             </el-table-column>
             <el-table-column
+                    prop="createtime"
+                    label="申请时间">
+            </el-table-column>
+            <el-table-column
                     prop="thedate"
-                    label="预约日期">
+                    label="预约日期"
+                    width="120">
             </el-table-column>
             <el-table-column
                     prop="patient.name"
-                    label="姓名"
-                    width="120">
+                    label="姓名">
             </el-table-column>
             <el-table-column
                     prop="patient.sex_str"
@@ -79,8 +83,7 @@
                     label="邮箱">
             </el-table-column>
             <el-table-column
-                    label="状态"
-                    width="100">
+                    label="状态">
                 <template slot-scope="scope">
                     <el-tag size="medium"
                             type="info">{{ scope.row.status_desc }}
