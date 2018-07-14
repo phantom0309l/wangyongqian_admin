@@ -49,15 +49,15 @@
                             <span slot="title">医院列表</span>
                         </el-menu-item>
 
-                        <el-menu-item index="2">
-                            <i class="el-icon-menu"></i>
-                            <span slot="title">文章列表</span>
-                        </el-menu-item>
+                        <!--<el-menu-item index="2">-->
+                            <!--<i class="el-icon-menu"></i>-->
+                            <!--<span slot="title">文章列表</span>-->
+                        <!--</el-menu-item>-->
 
-                        <el-menu-item index="4">
-                            <i class="el-icon-menu"></i>
-                            <span slot="title">工作量统计</span>
-                        </el-menu-item>
+                        <!--<el-menu-item index="4">-->
+                            <!--<i class="el-icon-menu"></i>-->
+                            <!--<span slot="title">工作量统计</span>-->
+                        <!--</el-menu-item>-->
 
                         <!--<el-menu-item index="3" disabled>-->
                         <!--<i class="el-icon-document"></i>-->
