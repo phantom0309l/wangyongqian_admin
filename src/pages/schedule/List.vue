@@ -72,7 +72,7 @@
             </el-table-column>
             <el-table-column
                     prop="valid_cnt"
-                    label="已约数量">
+                    label="有效预约数量">
             </el-table-column>
             <el-table-column
                     prop="total_cnt"
