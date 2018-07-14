@@ -61,10 +61,10 @@
                     prop="mobile"
                     label="手机号">
             </el-table-column>
-            <el-table-column
-                    prop="email"
-                    label="邮箱">
-            </el-table-column>
+            <!--<el-table-column-->
+                    <!--prop="email"-->
+                    <!--label="邮箱">-->
+            <!--</el-table-column>-->
             <el-table-column
                     label="状态"
                     width="100">

@@ -78,10 +78,10 @@
                     prop="patient.mobile"
                     label="手机号">
             </el-table-column>
-            <el-table-column
-                    prop="patient.email"
-                    label="邮箱">
-            </el-table-column>
+            <!--<el-table-column-->
+                    <!--prop="patient.email"-->
+                    <!--label="邮箱">-->
+            <!--</el-table-column>-->
             <el-table-column
                     label="状态">
                 <template slot-scope="scope">
