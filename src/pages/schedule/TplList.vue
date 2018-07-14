@@ -65,10 +65,10 @@
                     </el-button>
                 </template>
             </el-table-column>
-            <el-table-column
-                    prop="revisitrecord_cnt"
-                    label="已预约">
-            </el-table-column>
+            <!--<el-table-column-->
+                    <!--prop="revisitrecord_cnt"-->
+                    <!--label="已预约">-->
+            <!--</el-table-column>-->
             <el-table-column
                     prop="address"
                     label="地点">
