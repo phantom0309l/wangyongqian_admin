@@ -226,7 +226,7 @@
                 let self = this;
 
                 let url = api.get('schedulemgr.changestatuspost');
-                let params = {orderid: schedule.id, status: status};
+                let params = {scheduleid: schedule.id, status: status};
 
                 common.ajax({
                     url: url,
