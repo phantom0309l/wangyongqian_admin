@@ -47,8 +47,8 @@
                     width="50">
             </el-table-column>
             <!--<el-table-column-->
-                    <!--prop="disease_name"-->
-                    <!--label="疾病">-->
+            <!--prop="disease_name"-->
+            <!--label="疾病">-->
             <!--</el-table-column>-->
             <el-table-column
                     prop="thedate"
@@ -59,12 +59,12 @@
                     label="星期">
             </el-table-column>
             <!--<el-table-column-->
-                    <!--prop="daypart_str"-->
-                    <!--label="时刻">-->
+            <!--prop="daypart_str"-->
+            <!--label="时刻">-->
             <!--</el-table-column>-->
             <!--<el-table-column-->
-                    <!--prop="tkttype_str"-->
-                    <!--label="类型">-->
+            <!--prop="tkttype_str"-->
+            <!--label="类型">-->
             <!--</el-table-column>-->
             <el-table-column
                     prop="maxcnt"
@@ -96,11 +96,21 @@
                     width="150">
                 <template slot-scope="scope">
                     <el-button @click="handleDetailClick(scope.row)" size="mini">查看</el-button>
-                    <el-button
-                            size="mini"
-                            type="danger"
-                            @click="handleDelete(scope.$index, scope.row)">下线
-                    </el-button>
+                    <template v-if="scope.row.status === '0'">
+                        <el-button
+                                size="mini"
+                                @click="handleBtnClick(scope.row, 1)">
+                            上线
+                        </el-button>
+                    </template>
+                    <template v-else-if="scope.row.status === '1'">
+                        <el-button
+                                size="mini"
+                                type="danger"
+                                @click="handleBtnClick(scope.row, 0)">
+                            下线
+                        </el-button>
+                    </template>
                 </template>
             </el-table-column>
         </el-table>
@@ -211,6 +221,24 @@
                         scheduleid: schedule.id
                     }
                 })
+            },
+            handleBtnClick: function (schedule, status) {
+                let self = this;
+
+                let url = api.get('schedulemgr.changestatuspost');
+                let params = {orderid: schedule.id, status: status};
+
+                common.ajax({
+                    url: url,
+                    params: params,
+                    done: function () {
+                        self.$message.success('操作成功');
+                        self.fetchData();
+                    },
+                    dataFail: function (errmsg) {
+                        self.$message.error(errmsg);
+                    }
+                });
             },
             fetchData: function () {
                 let self = this;
